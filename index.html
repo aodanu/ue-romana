@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniunea Europeana</title>
+    <link rel="icon"  href="icon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li>
+                <a href="#image-section">
+                    <img src="rsz_1logo_cvid.png" alt="Logo" class="logo">
+                </a>
+            </li>
+            <li><a class="lato-bold" href="#image-section">Galerie</a></li>
+            <li><a class="lato-bold" href="#text-section">Introducere</a></li>
+            <li><a class="lato-bold" href="#another-section">Statistica</a></li>
+            <li><a class="lato-bold" href="#info-section">Info</a></li>
+        </ul>
+      
+        <div class="hamburger">
+            ☰
+        </div>
+    </nav>
+
+
+
+
+    <div id="image-section" class="image-section">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="1st.jpg" alt="Slide 1">
+                    <div class="text yeseva-one-regular typewriter">Europa – mai puternici împreună</div>
+                </div>
+                <div class="slide">
+                    <img src="2nd.jpg" alt="Slide 2">
+                    <div class="text yeseva-one-regular" style="text-align: center;">România și Moldova Țări Surori</div>
+                </div>
+                <div class="slide">
+                    <img src="3rd.jfif" alt="Slide 3">
+                    <div class="text yeseva-one-regular" style="text-align: center;">Destinul Țării Noastre</div>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#9664;</button>
+            <button class="next" onclick="changeSlide(1)">&#9654;</button>
+        </div>
+    </div>
+
+
+    <div id="text-section" class="section text-section">
+        <div>
+            <div class="hidden section-header" style="font-size:4em; font-weight: bold;">Introducere</div>
+            <div class="description hidden" style="font-style:italic; margin-bottom: 30px;">România și Moldova - Țări Surori</div>
+        </div>
+        <div class="content hidden">
+            <img class="hidden content-image" src="moldova_romania.jpg" alt="Description of image">
+            <p class="hidden content-text besley" style="text-align: justify;">
+            De-a lungul istoriei, România și Republica Moldova au fost frate și soră, având o legătură mult mai profundă decât doar una de vecinătate. Împărtășim o limbă, o cultură și o istorie comune, care ne-au unit chiar și în momentele dificile. Astăzi, cu ocazia referendumului din Republica Moldova ce va avea loc pe 20 octombrie 2024, este crucial să ne aducem aminte rădăcinile noastre, de unde venim și cine suntem. Această decizie istorică reprezintă o șansă unică de a ne alătura Marii Familii Europene, cu o viziune comună pentru un viitor mai bun. Să ne gândim la generațiile care vin, la dorința noastră de prosperitate, libertate și unitate, și să ne aducem singuri lumină în suflet și viitor, ca frați și compatrioți. Momentul acesta este unul de răscruce, iar împreună putem construi o cale solidă pentru un viitor european, ancorat în valorile și idealurile noastre comune.
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="content hidden">
+            <p class="hidden content-text besley" style="text-align: justify;">
+                Legătura noastră istorică, culturală și lingvistică demonstrează că România și Republica Moldova împărtășesc mult mai mult decât simple granițe geografice. Colaborarea constantă, începută încă din 1918 și continuată de-a lungul ultimelor decenii, subliniază faptul că suntem capabili să lucrăm împreună pentru un viitor comun în cadrul Uniunii Europene. Această colaborare nu se bazează doar pe relațiile strânse cu România, ci și pe numeroasele eforturi întreprinse de Republica Moldova pentru a adera la UE. Un exemplu actual și semnificativ este referendumul privind aderarea, care ne aduce astăzi împreună, chemându-ne la parteneriat, unitate și frăție, pentru a contribui la un viitor european comun.
+            </p>
+            <img class="hidden content-image" src="app9noe81p0d1.jpeg" alt="Description of image">
+        </div>
+        <div class="spacer"></div>
+        
+    </div>
+    
+    <div id="another-section" class="section another-section">
+        <div class="stats hidden">
+            <div class="num hidden">
+                <span id="count1" class="number">0</span>%
+                <div class="description">Oameni pro reunificare</div>
+            </div>
+            <div class="num hidden">
+                <span id="count2" class="number">0</span>%
+                <div class="description">Oameni pro UE</div>
+            </div>
+            <div class="num hidden">
+                <span id="count3" class="number">0</span>%
+                <div class="description">Oameni contra UE</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="info-section" class="section info-section">
+        <div id="container">
+            <nav class="inav">
+                <div><button class="ibtn lato-bold" id="homeBtn">Introducere</button><div class="spacer2"></div></div>
+                <div><button class="ibtn lato-bold" id="imagesBtn">Mesajul nostru</button><div class="spacer2"></div></div>
+                <div><button class="ibtn lato-bold" id="videoBtn">Simboluri</button><div class="spacer2"></div></div>
+                <div><button class="ibtn lato-bold" id="catalogBtn">Opinii și perspective</button><div class="spacer2"></div></div>
+                <div><button class="ibtn lato-bold" id="integritate">Personalități și evenimente</button><div class="spacer2"></div></div>
+            </nav>
+        </div>
+        <main id="mainContent">
+            <div id="homeContent" style="display: none;" class="hidden">
+                <h2 class="besley">Introducere</h2>
+                <div class="besley container">
+                    <p>   Uniunea Europeană (UE) este o uniune economică și politică formată din 27 de țări europene. Își are originile în tratatele semnate după Al Doilea Război Mondial, cu scopul de a promova cooperarea economică și a preveni conflictele. Comunitatea Economică Europeană a fost înființată în 1958 de șase țări: Belgia, Germania, Franța, Italia, Luxemburg și Țările de Jos.</p>
+                    <p>   UE a evoluat dintr-o uniune economică într-o organizație care acționează în diverse domenii, inclusiv politici climatice, sănătate, securitate și justiție. Oferă cetățenilor posibilitatea de a călători liber și de a trăi și munci în alte state membre, beneficiind de tratament egal în ceea ce privește locurile de muncă și securitatea socială.</p>
+                    <p>   Piața unică, care permite libera circulație a mărfurilor, serviciilor, capitalurilor și persoanelor, este esențială pentru economia UE. Instituțiile europene sunt din ce în ce mai transparente și democratice, iar cetățenii sunt încurajați să participe la viața democratică a Uniunii.</p>
+                    <p>   UE se bazează pe valori precum demnitatea umană, libertatea, democrația și respectul pentru drepturile omului. Drepturile fundamentale sunt protejate de Carta drepturilor fundamentale a UE, care interzice discriminarea și garantează accesul la justiție.</p>
+                    <p>   În 2012, UE a câștigat Premiul Nobel pentru Pace datorită contribuției sale la stabilitate și democrație în Europa. Cetățenii europeni au drepturi politice, inclusiv dreptul de a vota și de a candida la alegeri. Toate acțiunile UE se bazează pe tratate convenite democratic, iar respectarea acestora este garantată de un sistem judiciar independent.</p>
+    </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+            <div id="imagesContent" style="display: none;" class ="besley">
+                <h2>Mesajul nostru pentru cei de peste Prut cu ocazia Referendumului pentru aderarea la UE</h2>
+                <div class="cutii">
+                    <div class="box1 hidden" id="box1">
+                        <img src="imagini/imaginea2.png" alt="Descrierea imaginii">
+                    </div>
+                    <div class="besley box2 hidden" id="box2">
+                        <h4>"Pacea nu este absența conflictului, ci capacitatea de a o gestiona."</h4>
+                        <h3>Uniunea Europeană reprezintă un far al păcii și al stabilității în Europa, născută din dorința de a
+                            preveni conflictele și de a promova cooperarea între națiuni. Prin integrarea economică și valorile
+                            fundamentale ale democrației și drepturilor omului, statele membre au reușit să transforme rivalitățile
+                            istorice în parteneriate durabile. Mecanismele de prevenire a conflictelor și politica externă comună
+                            contribuie la menținerea unui mediu sigur și prosper. Astfel, aderarea la Uniunea Europeană nu doar că
+                            asigură bunăstarea, ci și un angajament ferm față de un viitor pașnic pentru toți cetățenii.</h3>
+                    </div>
+                </div>
+                <div class="cutii2 besley">
+                    <div class="box2 hidden" id="box2_2">
+                        <h4>"Unitatea este cheia pentru a depăși orice obstacol; împreună suntem mai puternici."</h4>
+                        <h3>Legătura istorică, culturală și lingvistică dintre România și Republica Moldova subliniază că împărtășim mai mult decât
+                        granițe geografice. Colaborarea, începută în 1918, demonstrează capacitatea noastră de a construi un viitor comun în
+                        Uniunea Europeană. Eforturile Moldovei pentru aderare și referendumul actual ne cheamă la unitate și frăție.
+                        
+                        Viitorul într-o Europă unită deschide oportunități economice, îmbunătățește legăturile regionale și facilitează accesul
+                        la resurse. Colaborarea va sprijini infrastructura, mobilitatea și educația, oferind generațiilor viitoare noi
+                        oportunități. Valorile de democrație, solidaritate și respect reciproc vor reflecta unitatea într-o diversitate care
+                        susține legăturile existente.
+        </h3>
+                    </div>
+                    <div class="box1 hidden" id="box1_2">
+                        <img src="imagini/imaginea1.png">
+                    </div>
+                </div>
+                <div class="cutii">
+                    <div class="box1 hidden" id="box1_3">
+                        <img src="imagini/imaginea3.png">
+                    </div>
+                    <div class=" besley box2 hidden" id="box2_3">
+                        <h4>"Ideea de progres nu este doar o ambiție individuală, ci un angajament colectiv care transformă
+                            societățile și le conduce spre un viitor mai bun."</h4>
+                        <h3>Aderarea Republicii Moldova la Uniunea Europeană oferă oportunități semnificative pentru transformarea economiei țării.
+                        Accesul la piața comună europeană va extinde comerțul și va integra Moldova în lanțurile globale de producție,
+                        facilitând dezvoltarea economică sustenabilă și crearea de locuri de muncă. Investițiile străine, generate de statutul
+                        de membru, vor moderniza infrastructura națională, de la transporturi la proiecte energetice și educaționale,
+                        contribuind la creșterea nivelului de dezvoltare.
+                        
+                        În plus, integrarea în Uniunea Europeană va oferi tinerilor din Moldova oportunități de studiu și formare profesională
+                        prin programe europene, precum Erasmus+. Aceștia vor avea acces la resurse educaționale de calitate și vor beneficia de
+                        mobilitate academică, contribuind la dezvoltarea unei forțe de muncă competitive pe plan global.
+        </h3>
+                    </div>
+                </div>
+            </div><div id="imagesContent" style="display: none;" class ="besley">
+            <h2>Mesajul nostru pentru cei de peste Prut cu ocazia Referendumului pentru aderarea la UE</h2>
+            <div class="cutii">
+                <div class="box1 hidden" id="box1">
+                    <img src="imagini/imaginea2.png" alt="Descrierea imaginii">
+                </div>
+                <div class="besley box2 hidden" id="box2">
+                    <h4>"Pacea nu este absența conflictului, ci capacitatea de a o gestiona."</h4>
+                    <h3>Uniunea Europeană reprezintă un far al păcii și al stabilității în Europa, născută din dorința de a
+                        preveni conflictele și de a promova cooperarea între națiuni. Prin integrarea economică și valorile
+                        fundamentale ale democrației și drepturilor omului, statele membre au reușit să transforme rivalitățile
+                        istorice în parteneriate durabile. Mecanismele de prevenire a conflictelor și politica externă comună
+                        contribuie la menținerea unui mediu sigur și prosper. Astfel, aderarea la Uniunea Europeană nu doar că
+                        asigură bunăstarea, ci și un angajament ferm față de un viitor pașnic pentru toți cetățenii.</h3>
+                </div>
+            </div>
+            <div class="cutii2 besley">
+                <div class="box2 hidden" id="box2_2">
+                    <h4>"Unitatea este cheia pentru a depăși orice obstacol; împreună suntem mai puternici."</h4>
+                    <h3>Legătura istorică, culturală și lingvistică dintre România și Republica Moldova subliniază că împărtășim mai mult decât
+                    granițe geografice. Colaborarea, începută în 1918, demonstrează capacitatea noastră de a construi un viitor comun în
+                    Uniunea Europeană. Eforturile Moldovei pentru aderare și referendumul actual ne cheamă la unitate și frăție.
+                    
+                    Viitorul într-o Europă unită deschide oportunități economice, îmbunătățește legăturile regionale și facilitează accesul
+                    la resurse. Colaborarea va sprijini infrastructura, mobilitatea și educația, oferind generațiilor viitoare noi
+                    oportunități. Valorile de democrație, solidaritate și respect reciproc vor reflecta unitatea într-o diversitate care
+                    susține legăturile existente.
+    </h3>
+                </div>
+                <div class="box1 hidden" id="box1_2">
+                    <img src="imagini/imaginea1.png">
+                </div>
+            </div>
+            <div class="cutii">
+                <div class="box1 hidden" id="box1_3">
+                    <img src="imagini/imaginea3.png">
+                </div>
+                <div class=" besley box2 hidden" id="box2_3">
+                    <h4>"Ideea de progres nu este doar o ambiție individuală, ci un angajament colectiv care transformă
+                        societățile și le conduce spre un viitor mai bun."</h4>
+                    <h3>Aderarea Republicii Moldova la Uniunea Europeană oferă oportunități semnificative pentru transformarea economiei țării.
+                    Accesul la piața comună europeană va extinde comerțul și va integra Moldova în lanțurile globale de producție,
+                    facilitând dezvoltarea economică sustenabilă și crearea de locuri de muncă. Investițiile străine, generate de statutul
+                    de membru, vor moderniza infrastructura națională, de la transporturi la proiecte energetice și educaționale,
+                    contribuind la creșterea nivelului de dezvoltare.
+                    
+                    În plus, integrarea în Uniunea Europeană va oferi tinerilor din Moldova oportunități de studiu și formare profesională
+                    prin programe europene, precum Erasmus+. Aceștia vor avea acces la resurse educaționale de calitate și vor beneficia de
+                    mobilitate academică, contribuind la dezvoltarea unei forțe de muncă competitive pe plan global.
+    </h3>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="videoContent" style="display: none;" class="besley">
+        <h2>Simboluri importante ale UE</h2>
+    <div class="Simboluri ">
+        <div class="boxSimbol besley" id="boxSimbol1">
+            <div class="boxSimbol-interior hidden">
+                <img src="imagini/e1.jpg10.jpg" >
+                <div class="text-container hidden">
+                    <h4>MONEDA</h4>
+                    <p>Moneda euro, simbolizată prin „€”, este nu doar o unitate monetară, ci și un simbol al integrării economice și politice
+                    în Europa. Introducerea sa în 1999 a fost un pas important în unificarea statelor membre ale Uniunii Europene,
+                    facilitând comerțul și mobilitatea capitalului.</p>
+                    
+                    <p>Folosită de 20 din cele 27 de state membre, euro reflectă valorile fundamentale ale Uniunii, precum cooperarea și
+                    stabilitatea. Designul monedei include harta Europei și simboluri culturale, evidențiind diversitatea patrimoniului
+                    european. Astfel, euro reprezintă solidaritatea și aspirația de a construi o Europă unită.</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxSimbol" id="boxSimbol1">
+            <div class="besley boxSimbol-interior hidden">
+                <img src="imagini/e1.jpg11.jpg">
+                <div class="text-container hidden">
+                    <h4>DRAPELUL</h4>
+                    <p>Steagul Uniunii Europene, cu un fond albastru și 12 stele aurii aranjate în cerc, simbolizează unitatea și identitatea
+                    europeană. Stelele reprezintă solidaritatea și armonia între popoare, numărul lor indicând perfecțiunea, nu numărul
+                    statelor membre.</p>
+                    
+                    <p>Adoptat oficial în 1986, steagul este folosit de toate instituțiile UE. Acesta reflectă aspirațiile de pace, democrație, prosperitate și valorile fundamentale ale Uniunii, cum ar
+                    fi respectul pentru drepturile omului și diversitatea culturală.Steagul este văzut nu doar în instituțiile europene, ci și în activități oficiale și evenimente internaționale. </p>
+                </div>
+            </div>
+        </div>
+    <div class="boxSimbol" id="boxSimbol1">
+        <div class="besley boxSimbol-interior hidden">
+            <img src="imagini/e1.jpg12.jpg">
+            <div class="text-container hidden">
+                <h4>PARLAMENTUL</h4>
+                <p>Parlamentul European reprezintă un simbol central al democrației în Uniunea Europeană, fiind una dintre cele trei
+                instituții principale. Ofera o voce poporului în deciziile care îi afectează.</p>
+                
+                <p>Parlamentul este responsabil pentru adoptarea legislației, aprobarea bugetului UE și supravegherea altor instituții. Promovând valori fundamentale precum drepturile omului și statul de drept,
+                Parlamentul simbolizează angajamentul pentru o Europă unită și democratică.Parlamentul joacă un rol esențial în procesul legislativ și în formularea politicilor europene.</p>
+            </div>
+        </div>
+    </div>
+    <div class="boxSimbol" id="boxSimbol1">
+        <div class="boxSimbol-interior hidden">
+            <img src="imagini/e1.jpg13.jpg">
+            <div class="besley text-container hidden">
+                <h4>IMNUL</h4>
+            
+                <p>Imnul Uniunii Europene, "Oda bucuriei" de Ludwig van Beethoven, simbolizează unitatea, pacea și solidaritatea între
+                statele membre. Adoptat oficial în 1985, imnul nu are cuvinte, subliniind diversitatea culturală a Europei.</p>
+                
+                <p>Reprezentând valori fundamentale precum democrația și respectul pentru drepturile omului, imnul este interpretat la
+                evenimente oficiale, evocând idealurile europene. Prin muzica sa, acesta promovează un sentiment de apartenență și
+                identitate comună, evidențiind angajamentul Uniunii pentru colaborare și coeziune în fața provocărilor globale.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <div id="catalogContent" style="display: none;">
+                <h2>Opiniile și perspectivele în contextul UE </h2>
+                <h2>„Elevi și profesori care susțin fiecare pas și au încredere în ziua de mâine”</h2>
+                <div class="container-opinii hidden">
+                    <img src="imagini/e1.jpg14.jpg">
+                    <div class="text-opinie hidden">
+                        <p>„Fraților, aderarea la UE este un pas istoric care ne apropie și ne unește în visul unui viitor comun.
+                        Prin UE înțelegem respectarea drepturilor omului, bunăstare, propășire, echitate socială, invenții, tehnologii, într-un
+                        cuvânt, performanță.
+                        Destinul României și al RM va fi marcat de un moment culminant: NU vor fi frontiere! Să ne amintim că frontierele sunt
+                        doar linii pe hartă, dar legăturile noastre sunt scrise în suflet și ancorate în istorie.
+                        Se vor reuni două state europene în cadrul UE, după ce un întreg a fost destrămat. Se vor fortifica punți culturale, se
+                        vor stabili conexiuni libere cu țările vecine.
+                        Pentru noi toți, acest pas reprezintă un nou început. România și Moldova, unite prin aceași limbă, istorie, datină și
+                        prin aceleași idealuri împărtășite, pot construi acum o nouă poveste, în care granițele nu se despart, ci se contopesc.
+                        ÎN UNIRE E PUTEREA!”</p>
+                    <div class="text-persoana-opine hidden">
+                        <p>„Botnari Liliana, Profesoară de limba și literatura română”</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="container-opinii2 hidden">
+                    <img src="imagini/e1.jpg15.jpg">
+                    <div class="text-opinie hidden">
+                        <p>„Vreau ca Moldova să adere la Uniunea Europeană pentru că ne-ar aduce oportunități mai bune, precum educație, locuri de
+                        muncă și stabilitate economică. Aderarea ar întări democrația și ar combate corupția, oferindu-ne un viitor mai sigur.
+                        În plus, UE respectă diversitatea culturală, așa că ne-am păstra identitatea și tradițiile.
+                    
+                        Această integrare ne-ar permite să beneficiem de fonduri europene care să sprijine dezvoltarea infrastructurii și a
+                        serviciilor publice. De asemenea, apartenența la UE ne-ar oferi acces la piețe mai largi, stimulând astfel economia
+                        locală și creând noi perspective pentru tineri.”</p>
+                        <div class="text-persoana-opine2 hidden">
+                            <p>„Balan Catarina, elevă CEITI”</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-opinii hidden">
+                        <img src="imagini/e1.jpg16.jpg">
+                        <div class="text-opinie hidden">
+                            <p>„Aderarea Republicii Moldova la Uniunea Europeană reprezintă un pas esențial pentru viitorul său și pentru tineri,
+                            inclusiv pentru mine, ca elevă în România. Experiența de a studia aici mi-a oferit o perspectivă asupra beneficiilor
+                            integrării europene, iar acest parcurs ar putea transforma semnificativ viața tinerilor din Republica Moldova.
+                            Pentru mine, aderarea la UE ar însemna acces la oportunități educaționale și profesionale mai diverse, facilitând
+                            mobilitatea și schimbul de idei. În plus, un viitor în cadrul Uniunii Europene ar putea oferi stabilitate și siguranță,
+                            aspecte esențiale pentru orice tânăr care își dorește să contribuie la dezvoltarea țării sale.
+                            Integrarea europeană nu doar că va aduce beneficii economice și sociale pentru Republica Moldova, dar va întări și
+                            statul de drept și democrația, creând un mediu favorabil pentru generațiile viitoare. Cred cu tărie că acest parcurs
+                            este necesar și că tinerii din Moldova merită să aibă parte de un viitor prosper și plin de oportunități.”</p>
+                            <div class="text-persoana-opine hidden">
+                                <p>„Nicolaevici Arieana, elevă în România”</p>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="container-opinii2 hidden">
+                        <img src="imagini/e1.jpg17.jpg">
+                        <div class="text-opinie hidden">
+                            <p>“Vreau ca Moldova să adere la Uniunea Europeană pentru că ne-ar aduce oportunități mai bune, precum educație, locuri de
+                            muncă și stabilitate economică. Aderarea ar întări democrația și ar combate corupția, oferindu-ne un viitor mai sigur.
+                            În plus, UE respectă diversitatea culturală, așa că ne-am păstra identitatea și tradițiile. Această integrare ne-ar
+                            permite să beneficiem de fonduri europene care să sprijine dezvoltarea infrastructurii și a serviciilor publice. De
+                            asemenea, apartenența la UE ar deschide noi căi pentru colaborări internaționale, sporind vizibilitatea și influența
+                            Moldovei pe scena globală. Mai mult, integrarea ne-ar oferi acces la tehnologie avansată și inovații, contribuind la
+                            modernizarea economiei. În final, aderarea ar întări legăturile sociale și culturale cu alte națiuni europene, promovând
+                            un sentiment de apartenență și solidaritate.”</p>
+                            <div class="text-persoana-opine2 hidden">
+                                <p>„Bivol Nicanor, elev CEITI”</p>
+                            </div>
+                    
+                        </div>
+    </div>
+    <div class="container-opinii hidden">
+        <img src="imagini/e1.jpg22.jpg">
+        <div class="text-opinie hidden">
+            <p>„Aderarea Republicii Moldova la Uniunea Europeană este un obiectiv vital pentru viitorul țării și pentru noi, tinerii,
+            care studiem în România. Experiența mea de student aici mi-a arătat cât de mult poate beneficia o societate de valorile
+            europene, cum ar fi democrația, statul de drept și oportunitățile economice.
+            Pentru mine, integrarea în UE ar deschide noi căi pentru dezvoltarea personală și profesională, oferind acces la
+            programe educaționale diverse și stagii internaționale. Acest lucru nu doar că ar îmbunătăți calificările noastre, dar
+            ne-ar și permite să contribuim la modernizarea și progresul Moldovei.
+            Consider că aderarea la UE este esențială pentru a crea un viitor stabil și prosper pentru toți tinerii din Republica
+            Moldova. A avea acces la o comunitate europeană mai largă ar însemna nu doar oportunități, ci și responsabilitatea de a
+            ne construi împreună viitorul.”
+            </p>
+            <div class="text-persoana-opine hidden">
+                <p>„Nicolaevici Arndreea, studentă în România”</p>
+            </div>
+    
+        </div>
+    </div>
+    <div class="container-opinii2 hidden">
+        <img src="imagini/e1.jpg21.jpg">
+        <div class="text-opinie hidden">
+            <p>“Uniunea Europeană este un exemplu remarcabil de cooperare internațională, promovând pacea, stabilitatea și prosperitatea
+            pe întregul continent. Aderarea la UE a Republicii Moldova, un stat mic și cu economia cam scăzută, ar aduce numeroase
+            beneficii.Acces la piața unică: Țările membre beneficiază de acces liber la o piață de peste 500 de milioane de consumatori.
+            Fonduri europene: Statele membre pot accesa fonduri nerambursabile pentru dezvoltare regională, infrastructură,
+            educație și multe altele. Libertatea de mișcare: Cetățenii pot locui, studia și lucra în orice stat membru al UE fără restricții.
+            Stabilitate politică și economică: Aderarea la UE aduce stabilitate politică și economică.
+            Standarde ridicate: UE impune standarde înalte în domenii precum protecția mediului, siguranța alimentară și
+            drepturile consumatorilor.
+            Astfel consider că momentan aderarea la UE este cea mai bună alegere pentru o dezvoltare continuă și durabilă a
+            Republicii Moldova.”</p>
+            <div class="text-persoana-opine2 hidden">
+                <p>„Petrachi Tatiana, elevă CEITI”</p>
+            </div>
+    
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="personalitatiContent" style="display: none;" class="besley">
+        <h2>Personalități Remarcabile</h2>
+        <div class="container-personalitati">
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg1.jpg" alt="Robert Schuman">
+                    <div>
+                        <h3>Robert Schuman</h3>
+                        <p>Robert Schuman, părintele fondator al Uniunii Europene, a prezentat pe 9 mai 1950 Declarația Schuman, propunând
+                        Comunitatea Europeană a Cărbunelui și Oțelului pentru a preveni conflictele între Franța și Germania. Aceasta a marcat
+                        începutul integrării europene. Ziua de 9 mai este celebrată ca Ziua Europei în onoarea sa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg.jpg" alt="Jean Monnet">
+                    <div>
+                        <h3>Jean Monnet</h3>
+                        <p>Jean Monnet, arhitect al Uniunii Europene, a fost un lider cheie în integrarea europeană postbelică. Ca fondator al
+                        Comunității Europene a Cărbunelui și Oțelului, a promovat cooperarea economică pentru a preveni conflictele. Viziunea sa
+                        a pus bazele Uniunii Europene moderne.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg4.jpg" alt="Angela Merkel">
+                    <div>
+                        <h3>Angela Merkel</h3>
+                        <p>Angela Merkel, cancelar al Germaniei între 2005 și 2021, a fost o figură crucială în Uniunea Europeană, gestionând crize
+                        economice, migrația și schimbările climatice. Leadershipul ei a promovat stabilitatea și integrarea europeană,
+                        consolidând rolul Germaniei ca lider regional.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container-personalitati">
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg18.jpg" alt="Robert Schuman">
+                    <div>
+                        <h3>Altiero Spinelli </h3>
+                        <p>A fost un politician și teoretician italian, cunoscut pentru contribuția sa la ideea unei Europe unite.
+                        Co-autor al „Manifestului de la Ventotene” din 1941, Spinelli a susținut integrarea europeană ca soluție pentru pace și
+                        democrație în Europa postbelică.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg19.jpg" alt="Jean Monnet">
+                    <div>
+                        <h3>Jacques Delors</h3>
+                        <p>Președinte al Comisiei Europene între 1985 și 1995, a fost un arhitect al pieței unice europene, având
+                        un rol esențial în aprofundarea integrării economice și politice. Viziunea sa a contribuit la lansarea euro și la
+                        consolidarea cooperării între statele membre.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden personalitate">
+                <div class="hidden personalitate-inner">
+                    <img src="imagini/e1.jpg20" alt="Angela Merkel">
+                    <div>
+                        <h3>Winston Churchill</h3>
+                        <p>A fost un susținător fervent al unității europene după Al Doilea Război Mondial, promovând ideea unei Europe unite
+                        pentru a preveni conflictele. Discursul său din 1946 la Zurich este considerat un moment important în istoria integrării
+                        europene, subliniind necesitatea colaborării între statele europene.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Evenimete istorice importante pentru RM în contextul UE</h2>
+        <div class="container-istoric">
+            <div class="hidden box">
+                <img src="imagini/e1.jpg24.jpg" alt="Descrierea imaginii">
+                <h4>Declararea de independență(1991)</h4>
+            </div>
+            <div class="hidden box">
+                <img src="imagini/e1.jpg25.jpg" alt="Descrierea imaginii">
+                <h4>Aderarea la Parteneriatul Estic (2009) </h4>
+            </div>
+            <div class="hidden box">
+                <img src="imagini/e1.jpg23.jpg" alt="Descrierea imaginii">
+                <h4>Semnarea acordului de asociere la UE(2014)</h4>
+            </div>
+            <div class="hidden box">
+                <img src="imagini/e1.jpg26.jpg" alt="Descrierea imaginii">
+                <h4>Implementarea DCFTA(2016)</h4>
+            </div>
+            <div class="hidden box">
+                <img src="imagini/e1.jpg27.jpg" alt="Descrierea imaginii">
+                <h4>Alegerile pro-europene din 2019</h4>
+            </div>
+            <div class="hidden box">
+                <img src="imagini/e1.jpg28.jpg" alt="Descrierea imaginii">
+                <h4>Obținerea statutului de candidat pentru aderare la UE (2022)</h4>
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+      
+      
+      
+      
+        </main>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 | Ionela Parfenii | Dan Albu-Oprea | Victor Lesan | Catalin Ciugureanu | Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
