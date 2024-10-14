@@ -596,7 +596,7 @@ body {
   .cutii, .cutii2 {
       flex-direction: column;
       flex-flow: column wrap;
-      overflow: hidden;
+      
       /* Pe ecrane mici, casetele se vor aranja pe verticală */
   }
 
