@@ -625,7 +625,9 @@ body {
       padding: 20px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       margin: 20px;
-      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
       text-align: left;
       flex-direction: row-reverse;
   }
@@ -636,7 +638,9 @@ body {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin: 20px;
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
   text-align: left;
 }
 
@@ -719,6 +723,9 @@ body {
   flex: 1;
   text-indent: 8px;
   font-style: italic;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
 }
 
 .text-persoana-opine {

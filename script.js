@@ -1,31 +1,35 @@
-let currentSlide = 0; 
+let currentSlide = 0;
+let slideInterval;
 
 function changeSlide(direction) {
-    const slides = document.querySelectorAll('.slide'); 
-    const texts = document.querySelectorAll('.text'); 
+    const slides = document.querySelectorAll('.slide');
+    const texts = document.querySelectorAll('.text');
 
 
     texts[currentSlide].style.opacity = 0;
-
     slides[currentSlide].classList.remove('active');
-
-
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
 
 
-    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`; // Slide effect
-
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
 
     setTimeout(() => {
         texts[currentSlide].style.opacity = 1;
-    }, 500); 
+    }, 500);
+
+    resetSlideInterval();
+}
+
+
+function resetSlideInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), 4000); 
 }
 
 
 document.querySelectorAll('.text')[currentSlide].style.opacity = 1;
 
-
-setInterval(() => {
+slideInterval = setInterval(() => {
     changeSlide(1);
 }, 4000);
 
